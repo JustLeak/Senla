@@ -1,31 +1,20 @@
 package task_2;
 
-import java.util.InputMismatchException;
-import java.util.Scanner;
-
 class Program {
-    void run() {
-        System.out.println("Enter two integers.");
-        try {
-            int a = readInt();
-            int b = readInt();
-            System.out.printf("Sum: %d; Difference: %d;\nGreatest Common Divisor: %d;\nLeast Common Multiple: %d.",
-                    a + b, a - b, gcd(a, b), lcm(a, b));
-        } catch (InputMismatchException e) {
-            System.out.println("Invalid input.");
-        }
-    }
-    //InputMismatchException
-    private int readInt() throws InputMismatchException {
-        Scanner in = new Scanner(System.in);
-        return in.nextInt();
-    }
-
-    private int gcd(int a, int b) {
+    int gcd(int a, int b) {
         return b == 0 ? a : gcd(b, a % b);
     }
 
-    private int lcm(int a, int b) {
+    int lcm(int a, int b) {
+        if (a == 0 && b == 0) throw new IllegalArgumentException("lcm(a ,b). Parameters a and b are equals to zero.");
         return a / gcd(a, b) * b;
+    }
+
+    int sum(int a, int b) {
+        return a + b;
+    }
+
+    int diff(int a, int b) {
+        return a - b;
     }
 }
