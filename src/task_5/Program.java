@@ -6,7 +6,7 @@ import java.util.regex.Pattern;
 class Program {
     //no case-sensitive
     int getWordCount(String text, String word) {
-        if (word.equals("") || text.equals("")) throw new IllegalArgumentException("Invalid input.");
+        if (word.equals("") || text.equals("")) throw new IllegalArgumentException("Invalid input!");
 
         text = text.toLowerCase();
         word = word.toLowerCase();
