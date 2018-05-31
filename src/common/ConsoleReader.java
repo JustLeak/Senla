@@ -14,12 +14,6 @@ public class ConsoleReader {
     }
 
     //InputMismatchException
-    public static double readDouble() throws InputMismatchException {
-        Scanner in = new Scanner(System.in);
-        return in.nextDouble();
-    }
-
-    //InputMismatchException
     public static String readWord() {
         Scanner in = new Scanner(System.in);
         String word = in.nextLine();
