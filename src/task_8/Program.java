@@ -1,7 +1,7 @@
 package task_8;
 
 class Program {
-    boolean isPalindrome(int i) {
+    static boolean isPalindrome(int i) {
         int next = 0;
         int temp = i;
 

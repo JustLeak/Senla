@@ -5,7 +5,7 @@ class Program {
     private static final int MIN_SIZE = 1;
 
     //IllegalArgumentException
-    int[] generate(int size) {
+    static int[] generate(int size) {
         if (size > MAX_SIZE || size < MIN_SIZE) throw new IllegalArgumentException("(generate) Unacceptable value of \"size\".");
 
         int[] arr = new int[size];
@@ -16,7 +16,7 @@ class Program {
     }
 
     //IllegalArgumentException
-    int[] findMaxAndMin(int[] arr) {
+    static int[] findMaxAndMin(int[] arr) {
         if (arr.length == 0) throw new IllegalArgumentException("(findMaxAndMin) Array is empty.");
 
         int[] result = {arr[0], arr[0]};

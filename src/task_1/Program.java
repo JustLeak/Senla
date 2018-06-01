@@ -1,7 +1,7 @@
 package task_1;
 
 class Program {
-    boolean isPrime(int num) {
+    static boolean isPrime(int num) {
         int temp;
         if (isEven(num)) {
             return num == 2;
@@ -16,7 +16,7 @@ class Program {
         return true;
     }
 
-    boolean isEven(int num) {
+    static boolean isEven(int num) {
         return num % 2 == 0;
     }
 }

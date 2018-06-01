@@ -4,7 +4,7 @@ import java.util.HashSet;
 import java.util.Set;
 
 class Program {
-    Set<Integer> getCombinations(int a, int b, int c) {
+    static Set<Integer> getCombinations(int a, int b, int c) {
         Set<Integer> integers = new HashSet<>();
 
         if ((a | b | c) < 0 || (a | b | c) > 9) throw new IllegalArgumentException();

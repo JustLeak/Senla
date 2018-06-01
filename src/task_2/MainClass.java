@@ -5,7 +5,6 @@ import java.util.Scanner;
 
 public class MainClass {
     public static void main(String[] args) {
-        Program program = new Program();
         Scanner in = new Scanner(System.in);
         System.out.println("Enter two integers: ");
 
@@ -13,7 +12,7 @@ public class MainClass {
             int a = in.nextInt();
             int b = in.nextInt();
             System.out.printf("Sum: %d; Difference: %d;\nGreatest Common Divisor: %d;\nLeast Common Multiple: %d.",
-                    program.sum(a, b), program.diff(a, b), program.gcd(a, b), program.lcm(a, b));
+                    Program.sum(a, b), Program.diff(a, b), Program.gcd(a, b), Program.lcm(a, b));
         } catch (InputMismatchException e) {
             System.out.println("Invalid input.");
         } catch (IllegalArgumentException e) {

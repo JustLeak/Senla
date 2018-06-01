@@ -8,7 +8,7 @@ import java.util.regex.Pattern;
 import java.util.stream.Collectors;
 
 class Program {
-    List<String> getWords(String sentence) {
+    static List<String> getWords(String sentence) {
         ArrayList<String> words = new ArrayList<>();
         Pattern pattern = Pattern.compile("[\\w\\-]+");
         Matcher matcher = pattern.matcher(sentence);
@@ -20,7 +20,7 @@ class Program {
         return words;
     }
 
-    void sort(List<String> strings) {
+    static void sort(List<String> strings) {
         for (int i = 0; i < strings.size(); i++) {
             for (int j = 0; j < strings.size() - 1 - i; j++) {
                 if (strings.get(j).length() > strings.get(j + 1).length()) {

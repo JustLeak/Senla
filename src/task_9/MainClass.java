@@ -7,7 +7,6 @@ import java.util.Scanner;
 
 public class MainClass {
     public static void main(String[] args) {
-        Program program = new Program();
         Scanner in = new Scanner(System.in);
         System.out.println("Enter the length of the sequence: ");
         try {
@@ -19,7 +18,7 @@ public class MainClass {
                     integers.add(i);
                     System.out.print(i + " ");
                 }
-                System.out.println("\nSum = " + program.getSum(integers));
+                System.out.println("\nSum = " + Program.getSum(integers));
 
             } else System.out.println("The length of the sequence must be greater than 0.");
 
