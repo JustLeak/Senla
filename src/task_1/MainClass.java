@@ -7,16 +7,14 @@ import java.util.Optional;
 public class MainClass {
     public static void main(String[] args) {
         Program program = new Program();
-        Optional<Integer> optional;
-
         System.out.println("Enter an integer: ");
-        optional = ConsoleReader.readIntOptional();
+        Optional<Integer> integer = ConsoleReader.readIntOptional();
 
-        if (optional.isPresent()) {
+        if (integer.isPresent()) {
             System.out.printf("%d is %s and %s.",
-                    optional.get(),
-                    program.isPrime(optional.get()) ? "prime" : "composite",
-                    program.isEven(optional.get()) ? "even" : "odd");
+                    integer.get(),
+                    program.isPrime(integer.get()) ? "prime" : "composite",
+                    program.isEven(integer.get()) ? "even" : "odd");
 
         } else System.out.println("Invalid input.");
     }
