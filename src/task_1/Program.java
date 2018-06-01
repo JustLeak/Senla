@@ -1,8 +1,5 @@
 package task_1;
 
-import java.util.Optional;
-import java.util.Scanner;
-
 class Program {
     boolean isPrime(int num) {
         int temp;

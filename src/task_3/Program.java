@@ -1,7 +1,7 @@
 package task_3;
 
 class Program {
-    //not case-sensitive
+    //not case sensitive
     boolean isPalindrome(String word) {
         word = word.toLowerCase();
 

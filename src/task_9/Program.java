@@ -8,6 +8,7 @@ class Program {
         for (int i : integers) {
             sum += i;
         }
+
         return sum;
     }
 }

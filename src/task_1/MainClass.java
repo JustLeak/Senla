@@ -13,8 +13,12 @@ public class MainClass {
         optional = ConsoleReader.readIntOptional();
 
         if (optional.isPresent()) {
-            int i = optional.get();
-            System.out.printf("%d is %s and %s.", i, program.isPrime(i) ? "prime" : "composite", program.isEven(i) ? "even" : "odd");
+
+            System.out.printf("%d is %s and %s.",
+                    optional.get(),
+                    program.isPrime(optional.get()) ? "prime" : "composite",
+                    program.isEven(optional.get()) ? "even" : "odd");
+
         } else System.out.println("Invalid input.");
     }
 }
