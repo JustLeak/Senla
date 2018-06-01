@@ -13,7 +13,6 @@ public class MainClass {
         optional = ConsoleReader.readIntOptional();
 
         if (optional.isPresent()) {
-
             System.out.printf("%d is %s and %s.",
                     optional.get(),
                     program.isPrime(optional.get()) ? "prime" : "composite",
